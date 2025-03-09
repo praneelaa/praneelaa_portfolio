@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unscramble the Words Game</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .clock-icon {
+            width: 0.8cm;
+            height: 0.9cm;
+        }
+    
+        #back-button {
+            background-color: black;
+            color: white;
+            border: 2px solid red;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    
+        #back-button:hover {
+            background-color: red;
+            color: black;
+        }
+    
+        .check-word {
+            background-color: red;
+            color: white;
+            border: 2px solid rgb(10, 10, 10);
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    
+        .check-word:hover {
+            background-color: rgb(6, 6, 6);
+            color: white;
+        }
+    
+        .refresh-word {
+            background-color: red;
+            color: white;
+            border: 2px solid rgb(17, 17, 16);
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    
+        .refresh-word:hover {
+            background-color: rgb(11, 11, 11);
+            color: white;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>!     WELCOME TO UNSCRAMBLE ME !</h1>
+        <div class="content">
+            <h2>  WORD SCRAMBLE</h2>
+            <div class="details">
+                <p class="hint">Hint: <span>  </span></p>
+                <p class="time">Time Left: <span><img src="clockk.jpg.png" alt="Clock icon" class="clock-icon"><b>  30</b> s</span></p>
+            </div>
+            <p class="word"></p>
+            <input type="text" spellcheck="false" placeholder="Enter a valid word">
+            <div class="buttons">
+                <button class="refresh-word">Refresh Word</button>
+                <button class="check-word">Check Word</button>
+                <button id="back-button">Back</button>
+            </div>
+        </div>
+    </div>
+    <script src="word.js" defer></script>
+    <script src="script.js" defer></script>
+    <script>
+        document.getElementById("back-button").addEventListener("click", function() {
+            window.location.href = "level.html"; 
+        });
+    </script>
+</body>
+</html>

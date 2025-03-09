@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         correctWord = randomObj.word.toLowerCase();
         inputField.value = "";
         inputField.setAttribute("maxlength", correctWord.length);
-        initTimer(30); 
+        initTimer(15); 
     };
 
     const checkWord = () => {
