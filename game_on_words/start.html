@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 20cm; height: 20cm; overflow: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body background="haunted_house.jpg.jpeg" style="background-color: #0e0e0e; color: #fa0d0d; margin: 0; padding: 0; position: relative;">
+    <div style="border: 0.2cm solid #cb0202; width: calc(100% - 170mm); height: calc(100% - 120mm); position: fixed; top: calc(100mm - 0.1cm); bottom: calc(100mm - 0.1cm); right: calc(10cm - 10cm); left: calc(10cm - 10cm); display: flex; justify-content: center; align-items: center; margin: auto; background-image: url('darkpic.jpg.jpeg'); background-size: cover; background-position: center; box-shadow: 0 0 1.5cm rgba(255, 0, 0, 0.7);">
+        <table style="width: 90%; height: 90%; border-collapse: collapse;">
+            <tr>
+                <td align="center">
+                    <h1 style="color: #f0e9e9;">!!! WELCOME TO UNSCRAMBLE THE WORDS !!!</h1>
+                    <button onclick="redirectToGame()" style="background-color: #060000; color: #f0e9e9; border: 0.2cm solid #e70505; padding: 10px 20px; cursor: pointer;">START GAME</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function redirectToGame() {
+            window.location.href = "level.html";
+        }
+    </script>
+</body>
+</html>

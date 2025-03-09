@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Levels</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url("haunted_house.jpg.jpeg");
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border: 10px solid red;
+        box-shadow: 0 0 1.5cm red; 
+        border-radius: 10px;
+        text-align: center;
+    }
+    .container h1 {
+        color: red;
+        font-size: 36px;
+        text-shadow: 0 0 10px #ff0000; 
+        font-family: 'Creepster', cursive; 
+    }
+    .level-button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #c42404;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+    }
+    .level-button:hover {
+        background-color: #bb1a01;
+    }
+    .back-button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: red; 
+        color: white;
+        border: 2px solid red; 
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+    }
+    .back-button:hover {
+        background-color: #bb1a01;
+        border-color: #bb1a01; 
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Select Game Level</h1>
+
+    <button class="level-button" onclick="startLevel(1)">Level 1</button>
+    <button class="level-button" onclick="startLevel(2)">Level 2</button>
+    <button class="level-button" onclick="startLevel(3)">Level 3</button>
+    <button class="back-button" onclick="goToStart()">Back</button> 
+</div>
+
+<script>
+    function startLevel(level) {
+        switch (level) {
+            case 1:
+                window.location.href = "unscramble_game.html";
+                break;
+            case 2:
+                window.location.href = "unscramble_game2.html";
+                break;
+            case 3:
+                window.location.href = "unscramble_game3.html";
+                break;
+            default:
+                alert("Invalid level");
+        }
+    }
+    
+    function goToStart() {
+        window.location.href = "start.html"; 
+    }
+</script>
+
+</body>
+</html>
